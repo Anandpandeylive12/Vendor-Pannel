@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Wireless Headphones",
+    "description": "Noise cancelling over-ear wireless headphones",
+    "price": 2499,
+    "category": "Electronics",
+    "image": "https://example.com/headphones.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "Smart Watch",
+    "description": "Fitness smartwatch with heart rate monitor",
+    "price": 3999,
+    "category": "Wearables",
+    "image": "https://example.com/smartwatch.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with deep bass",
+    "price": 1799,
+    "category": "Electronics",
+    "image": "https://example.com/speaker.jpg",
+    "status": "rejected"
+  },
+  {
+    "name": "Gaming Mouse",
+    "description": "RGB gaming mouse with adjustable DPI",
+    "price": 1299,
+    "category": "Accessories",
+    "image": "https://example.com/mouse.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "description": "Mechanical keyboard with blue switches",
+    "price": 3499,
+    "category": "Accessories",
+    "image": "https://example.com/keyboard.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "USB-C Hub",
+    "description": "Multiport USB-C hub with HDMI support",
+    "price": 1999,
+    "category": "Accessories",
+    "image": "https://example.com/hub.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "Laptop Stand",
+    "description": "Adjustable aluminum laptop stand",
+    "price": 1499,
+    "category": "Office",
+    "image": "https://example.com/stand.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "HD Webcam",
+    "description": "1080p HD webcam for video conferencing",
+    "price": 2199,
+    "category": "Electronics",
+    "image": "https://example.com/webcam.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "Wireless Earbuds",
+    "description": "True wireless earbuds with ANC",
+    "price": 2999,
+    "category": "Audio",
+    "image": "https://example.com/earbuds.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "Power Bank 20000mAh",
+    "description": "Fast charging power bank",
+    "price": 1899,
+    "category": "Electronics",
+    "image": "https://example.com/powerbank.jpg",
+    "status": "rejected"
+  },
+  {
+    "name": "Smart LED Bulb",
+    "description": "WiFi enabled smart LED bulb",
+    "price": 899,
+    "category": "Home",
+    "image": "https://example.com/bulb.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "Wireless Charger",
+    "description": "Fast wireless charging pad",
+    "price": 1299,
+    "category": "Electronics",
+    "image": "https://example.com/charger.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with brightness control",
+    "price": 1599,
+    "category": "Office",
+    "image": "https://example.com/lamp.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "External Hard Drive 1TB",
+    "description": "Portable 1TB external hard drive",
+    "price": 4599,
+    "category": "Storage",
+    "image": "https://example.com/harddrive.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "24-inch Monitor",
+    "description": "Full HD IPS 24-inch monitor",
+    "price": 8999,
+    "category": "Electronics",
+    "image": "https://example.com/monitor.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "WiFi Router",
+    "description": "Dual band WiFi router",
+    "price": 3299,
+    "category": "Networking",
+    "image": "https://example.com/router.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "Graphic Tablet",
+    "description": "Digital drawing tablet for designers",
+    "price": 5499,
+    "category": "Accessories",
+    "image": "https://example.com/tablet.jpg",
+    "status": "rejected"
+  },
+  {
+    "name": "Office Chair",
+    "description": "Ergonomic office chair with lumbar support",
+    "price": 7999,
+    "category": "Furniture",
+    "image": "https://example.com/chair.jpg",
+    "status": "pending"
+  },
+  {
+    "name": "VR Headset",
+    "description": "Virtual reality headset for gaming",
+    "price": 15999,
+    "category": "Gaming",
+    "image": "https://example.com/vr.jpg",
+    "status": "approved"
+  },
+  {
+    "name": "Smart Plug",
+    "description": "WiFi smart plug with app control",
+    "price": 999,
+    "category": "Home",
+    "image": "https://example.com/plug.jpg",
+    "status": "pending"
+  }
+]
