@@ -9,7 +9,8 @@ const AddProduct = () => {
 
   const submit = async (e) => {
     e.preventDefault();
-    await api.post("/product/add", form);
+    await api.post("/product", form);
+
     navigate("/dashboard");
   };
 

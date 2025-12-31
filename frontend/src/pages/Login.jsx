@@ -3,6 +3,8 @@ import api from "../api/axios";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 
 
 const Login = () => {
@@ -16,6 +18,12 @@ const Login = () => {
     login(res.data.vendor, res.data.token);
     navigate("/dashboard");
   };
+useEffect(() => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    navigate("/dashboard");
+  }
+}, [navigate]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

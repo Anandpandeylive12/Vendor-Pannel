@@ -18,12 +18,22 @@ export const pendingProducts = async (req, res) => {
   res.json(products);
 };
 
-export const approveProduct = async (req, res) => {
+export const updateProductStatus = async (req, res) => {
   const { status } = req.body;
+
+  if (!["approved", "rejected"].includes(status)) {
+    return res.status(400).json({ message: "Invalid status" });
+  }
+
   const product = await Product.findByIdAndUpdate(
-    req.params.productId,
+    req.params.id,
     { status },
     { new: true }
   );
+
+  if (!product) {
+    return res.status(404).json({ message: "Product not found" });
+  }
+
   res.json(product);
 };

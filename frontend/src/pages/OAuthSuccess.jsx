@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
+import { useAuth } from "../context/AuthContext";
+import { jwtDecode } from "jwt-decode";
 
 const OAuthSuccess = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -14,15 +17,25 @@ const OAuthSuccess = () => {
       return;
     }
 
-    // 1️⃣ Save token
+    // ✅ Decode token to get user data
+    const decoded = jwtDecode(token);
+
+    const user = {
+      _id: decoded.id,
+      role: decoded.role
+    };
+
+    // ✅ Persist BOTH user + token (THIS WAS MISSING)
     localStorage.setItem("token", token);
+    localStorage.setItem("user", JSON.stringify(user));
 
-    // 2️⃣ Set token for axios
-    api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    api.defaults.headers.common.Authorization = `Bearer ${token}`;
 
-    // 3️⃣ Redirect (no extra API calls)
+    // ✅ Update context
+    login(user, token);
+
     navigate("/dashboard");
-  }, [navigate]);
+  }, [navigate, login]);
 
   return (
     <div className="flex h-screen items-center justify-center">

@@ -1,18 +1,20 @@
 import express from "express";
-import auth from "../middleware/auth.middleware.js";
-import adminOnly from "../middleware/role.middleware.js";
 import {
   addProduct,
   vendorProducts,
   pendingProducts,
-  approveProduct
+  updateProductStatus
 } from "../controllers/product.controller.js";
+
+import { protect, adminOnly } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
-router.post("/add", auth, addProduct);
-router.get("/vendor/:vendorId", auth, vendorProducts);
-router.get("/pending", auth, adminOnly, pendingProducts);
-router.put("/approve/:productId", auth, adminOnly, approveProduct);
+router.post("/", protect, addProduct);
+router.get("/vendor/:vendorId", protect, vendorProducts);
+
+// ADMIN ONLY
+router.get("/pending", protect, adminOnly, pendingProducts);
+router.put("/approve/:id", protect, adminOnly, updateProductStatus);
 
 export default router;
